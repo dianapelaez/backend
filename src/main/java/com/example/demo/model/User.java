@@ -9,7 +9,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name= "users")
 @Access(AccessType.FIELD)
-
 public class User extends ParentEntity{
 
 	private static final long serialVersionUID = 186846492040550174L;
@@ -31,7 +30,7 @@ public class User extends ParentEntity{
     
     @Column(name = "address", nullable = false, length = 150)
 	private String address;
-	
+    
 	public String getFirstName() {
 		return firstName;
 	}
