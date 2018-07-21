@@ -18,4 +18,6 @@ public interface UserService {
 	 * @return
 	 */
 	List<User> findAll();
+
+	void deleteUser(long id);
 }
